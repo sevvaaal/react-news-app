@@ -1,0 +1,150 @@
+body {
+  font-family: sans-serif;
+  background: #432E54;
+  margin: 0;
+  padding: 2rem;
+}
+
+.App {
+  max-width: 700px;
+  margin: auto;
+  background: #E8BCB9; 
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #4B4376; 
+}
+
+form input {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #AE445A;
+  background: #E8BCB9;
+  color: #432E54;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background: #AE445A;
+  color: #E8BCB9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #4B4376;
+  color: #E8BCB9;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #AE445A;
+  color: #E8BCB9;
+  border: 1px solid #4B4376;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  background: #E8BCB9;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 2px solid #AE445A;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+  color: #432E54;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+  background-color: #AE445A;
+  color: #E8BCB9;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #E8BCB9;
+  font-weight: bold;
+}
+
+button {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #AE445A;
+  color: #E8BCB9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #4B4376;
+}
+
+option {
+  background-color: #E8BCB9;
+  color: #432E54;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 1rem;
+  }
+
+  form input,
+  form button,
+  select {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.news-grid li {
+  list-style: none;
+  background: #AE445A;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #AE445A;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+  color: #432E54;
+}
+
+.news-grid li:hover {
+  transform: translateY(-4px);
+  background: #AE445A;
+  color: #E8BCB9;
+}
+
+.news-grid li img.news-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
